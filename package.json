@@ -1,6 +1,6 @@
 {
   "name": "require-apply-packages",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Requires each main module from packages in a base directory, invoking each exported function with optional parameter(s).",
   "main": "index.js",
   "scripts": {
