@@ -1,11 +1,10 @@
 'use strict';
 
 var load = require('./');
-var test = require('tape');
 var koa = require('koa');
-var path = require('path');
 var request = require('supertest');
-var dir = path.resolve(__dirname, "example", "resources");
+var resolve = require('path').resolve;
+var dir = resolve(__dirname, "example", "resources");
 
 describe('/ping', function () {
 
