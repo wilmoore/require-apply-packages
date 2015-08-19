@@ -1,17 +1,17 @@
-'use strict';
+'use strict'
 
-/**
+/*!
  * imports.
  */
 
-let find = require('fs-finder');
-let path = require('path');
+var find = require('fs-finder')
+var path = require('path')
 
-/**
+/*!
  * exports.
  */
 
-module.exports = packages;
+module.exports = packages
 
 /**
  * Require the main module of each package in a base directory, invoking the exported function
@@ -19,8 +19,8 @@ module.exports = packages;
  *
  * Example:
  *
- *    let app = koa();
- *    load.modules(path.resolve(__dirname, "app", "resources"), app);
+ *    var app = koa()
+ *    load.modules(path.resolve(__dirname, 'app', 'resources'), app)
  *
  * @param {string} dir
  * base directory.
@@ -29,13 +29,13 @@ module.exports = packages;
  * KOA application instance.
  */
 
-function packages(dir, arg, skip) {
-  let modules = find.in(dir).findDirectories();
+function packages (dir, arg, skip) {
+  var modules = find.in(dir).findDirectories()
 
   modules.forEach(function (mod) {
-    if (skipped(skip, mod)) return;
-    require(mod)(arg);
-  });
+    if (skipped(skip, mod)) return
+    require(mod)(arg)
+  })
 }
 
 /**
@@ -48,9 +48,8 @@ function packages(dir, arg, skip) {
  * module path.
  */
 
-function skipped(skip, mod) {
-  var name = path.basename(mod);
-  skip = skip || [];
-  return !!~skip.indexOf(name);
+function skipped (skip, mod) {
+  var name = path.basename(mod)
+  skip = skip || []
+  return !!~skip.indexOf(name)
 }
-
