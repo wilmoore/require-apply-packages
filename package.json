@@ -7,7 +7,8 @@
     "url": "https://github.com/wilmoore/require-apply-packages/issues"
   },
   "dependencies": {
-    "fs-finder": "^1.8.0"
+    "fs-finder": "^1.8.0",
+    "standard": "^5.1.0"
   },
   "devDependencies": {
     "koa": "^0.12.2",
