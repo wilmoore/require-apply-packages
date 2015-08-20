@@ -1,7 +1,7 @@
 {
   "name": "require-apply-packages",
   "description": "Requires each main module from packages in a base directory, invoking each exported function with optional parameter(s).",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/require-apply-packages/issues"
