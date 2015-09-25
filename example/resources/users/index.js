@@ -2,11 +2,11 @@
 
 module.exports = function (app) {
   /**
-   * route handler for /status.
+   * route handler for /users.
    */
 
   app.use(function *(next) {
     yield* next
-    if (this.path === '/status' && this.method === 'GET') this.status = 204
+    if (this.path === '/users' && this.method === 'GET') this.body = 'someuser'
   })
 }
