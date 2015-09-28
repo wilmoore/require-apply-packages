@@ -8,7 +8,7 @@
 
 ## Examples
 
-###### loading a directory of Koa route modules.
+###### loading a directory and all subdirectories of Koa route modules.
 
 > NOTE: loading Koa routes was my initial use-case; however, this module is not tied to koa in any way.
 

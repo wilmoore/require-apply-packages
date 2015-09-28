@@ -30,7 +30,7 @@ module.exports = packages
  */
 
 function packages (dir, arg, skip) {
-  var modules = find.in(dir).findDirectories()
+  var modules = find.from(dir).findDirectories()
 
   modules.forEach(function (mod) {
     if (skipped(skip, mod)) return
