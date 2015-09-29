@@ -1,18 +1,24 @@
 {
   "name": "require-apply-packages",
   "description": "Requires each main module from packages in a base directory, invoking each exported function with optional parameter(s).",
-  "version": "0.4.1",
+  "version": "0.0.0-versioned-via-semantic-release",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/require-apply-packages/issues"
   },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
   "dependencies": {
-    "fs-finder": "^1.8.0",
-    "standard": "^5.1.0"
+    "fs-finder": "^1.8.0"
   },
   "devDependencies": {
+    "commitizen": "^1.0.5",
+    "cz-conventional-changelog": "^1.1.2",
     "koa": "^0.12.2",
-    "mocha": "^1.21.5",
+    "mocha": "^2.3.3",
+    "semantic-release": "^4.3.5",
+    "standard": "^5.3.1",
     "supertest": "^0.14.0"
   },
   "homepage": "https://github.com/wilmoore/require-apply-packages",
@@ -30,9 +36,8 @@
     "url": "https://github.com/wilmoore/require-apply-packages"
   },
   "scripts": {
-    "release-major": "npm version major && git push --follow-tags && npm publish",
-    "release-minor": "npm version minor && git push --follow-tags && npm publish",
-    "release-patch": "npm version patch && git push --follow-tags && npm publish",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "standard": "standard",
     "test": "npm run standard --silent && NODE_ENV=test mocha --harmony --reporter spec"
   },

@@ -1,6 +1,6 @@
 # require-apply-packages
 
-[![Build Status](http://img.shields.io/travis/wilmoore/require-apply-packages.svg)](https://travis-ci.org/wilmoore/require-apply-packages) [![NPM version](http://img.shields.io/npm/v/require-apply-packages.svg)](https://www.npmjs.org/package/require-apply-packages) [![NPM downloads](http://img.shields.io/npm/dm/require-apply-packages.svg)](https://www.npmjs.org/package/require-apply-packages) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Build Status](http://img.shields.io/travis/wilmoore/require-apply-packages.svg)](https://travis-ci.org/wilmoore/require-apply-packages) [![NPM version](http://img.shields.io/npm/v/require-apply-packages.svg)](https://www.npmjs.org/package/require-apply-packages) [![NPM downloads](http://img.shields.io/npm/dm/require-apply-packages.svg)](https://www.npmjs.org/package/require-apply-packages) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 > Requires each main module from packages in a base directory, invoking each exported function with optional parameter(s).
 
