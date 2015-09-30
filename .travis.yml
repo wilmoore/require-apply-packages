@@ -3,7 +3,7 @@ after_success:
   - export $(cat .to_export_back)
   - npm run semantic-release
 before_install:
-  - npm i -g npm@^2.0.0
+  - npm i -g npm@latest
 before_script:
   - npm prune
   - 'curl -Lo travis_after_all.py https://git.io/vLSON'
@@ -20,7 +20,7 @@ node_js:
   - '0.12'
   - 'iojs'
 notifications:
-  email: false
+  email: true
 script:
   - npm test --silent
 sudo: false
